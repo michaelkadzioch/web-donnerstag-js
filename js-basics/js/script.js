@@ -1,35 +1,39 @@
 function output() {
-    let zahl1;
-    let zahl2;
-    let ergebnis;
+    let zahl1 = 50;
+    let zahl2 = 50;
 
-    zahl1 = 5;
-    zahl2 = 10;
-
-    // Erst wird gerechnet, dann wird zugewiesen
-    ergebnis = zahl1 + zahl2;
-
-    // Erst wird gerechnet, dann wird zugewiesen
-    ergebnis = ergebnis + 3;
-
-    // Kürzere Syntax in JS
-    ergebnis += 3;
-
-    document.getElementById('js-output').innerHTML = ergebnis;
+    // Checken, ob zahl1 oder zahl2 größer
+    // Anwort ist IMMER 1 oder 0, ja oder nein, wahr oder falsch
+    // wenn ja dann if
+    // 1. Frage / Bedingung
+    if (zahl1 > zahl2) {
+        document.getElementById('js-output').innerHTML = 'zahl1 ist größer';
+    }
+    // 2. Frage / Bedingung (wichtig == als Vergleich)
+    else if (zahl1 == zahl2) {
+        document.getElementById('js-output').innerHTML = 'zahl 1 und zahl 2 sind gleich';
+    }
+    // sonst else
+    else {
+        document.getElementById('js-output').innerHTML = 'zahl2 ist größer';
+    }
+    
 }
 
 
-
 function output1() {
-    // Variable wird definiert
-    let ausgabetext;
+    let zahl1 = 30;
+    let zahl2 = 55;
 
-    // Variable initalisieren
-    ausgabetext = 'Hallo Welt!';
-
-    // Variable überschreiben
-    ausgabetext = 'Ich bin ein neuer Text!';
-
-
-    document.getElementById('js-output').innerHTML = ausgabetext;
+    // Checken, ob zahl1 oder zahl2 größer
+    // Anwort ist IMMER 1 oder 0, ja oder nein, wahr oder falsch
+    // wenn ja dann if
+    if (zahl1 > zahl2){
+        document.getElementById('js-output').innerHTML = zahl1;
+    }
+    // sonst else
+    else {
+        document.getElementById('js-output').innerHTML = zahl2;
+    }
+    
 }
