@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    padding: 0;
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.box {
+    background-color: crimson;
+    padding: 8px;
+    margin: 14px;
+}
