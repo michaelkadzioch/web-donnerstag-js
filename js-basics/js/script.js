@@ -1,6 +1,64 @@
 function output() {
+    // Scheife mit Bedingung
+
+    let wert = 1000;
+    let i = 0;
+
+    while (wert >= 100) {
+        wert -= 3;
+        i++;
+    }
+
+    document.getElementById('js-output').innerHTML = 'Der wert ist: ' + wert + ' Die Scheife ist gelaufen: ' + i;
+}
+
+
+function output4() {
+
+    // Einmaleins als Schleife
+
+    let outputText = '';
+    let zahl = 17;
+    let ergebnis;
+
+    for (let i = 1; i <= 10; i += 1) {
+
+        ergebnis = zahl * i;
+
+        outputText += zahl + ' mal ' + i + ' ist gleich ' + ergebnis + '<br>';
+
+        if (i < 0) {
+            outputText = 'falsche Richtung'
+            break;
+        }
+    }   
+    
+    document.getElementById('js-output').innerHTML = outputText; 
+}
+
+
+
+function output3() {
+    let outputText = '';
+
+    for (let i = 0; i < 100; i ++) {
+        outputText += 'Hallo ';
+
+        if (i < 0) {
+            outputText += 'falsche Richtung'
+            break;
+        }
+    }
+   
+    
+    document.getElementById('js-output').innerHTML = outputText; 
+}
+
+
+
+function output2() {
     let zahl1 = 50;
-    let zahl2 = 50;
+    let zahl2 = 80;
 
     // Checken, ob zahl1 oder zahl2 größer
     // Anwort ist IMMER 1 oder 0, ja oder nein, wahr oder falsch
@@ -37,3 +95,4 @@ function output1() {
     }
     
 }
+
