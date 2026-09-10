@@ -1,4 +1,27 @@
 function output() {
+
+    let outputtext = '';
+
+    outputtext = outputtext + 'Rechnung: ' + rechnen(10, 5) + '<br>';
+    outputtext = outputtext + 'Rechnung: ' + rechnen(30, 8) + '<br>';
+    outputtext = outputtext + 'Rechnung: ' + rechnen(140, 17) + '<br>';
+    outputtext = outputtext + 'Rechnung: ' + rechnen(78, 5) + '<br>';
+    document.getElementById('js-output').innerHTML = outputtext;
+}
+
+
+// Function mit Eingabewerten bzw. Parameter
+// und Return-Wert
+function rechnen(zahl1, zahl2) {
+
+    let ergebnis;
+    ergebnis = zahl1 + zahl2;
+
+    return ergebnis;
+}
+
+
+function output5() {
     // Scheife mit Bedingung
 
     let wert = 1000;
