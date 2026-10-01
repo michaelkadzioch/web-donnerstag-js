@@ -6,6 +6,8 @@ const title = document.getElementById('title');
 const outputBox = document.getElementById('js-output');
 
 const box1 = document.getElementById('box1');
+const box2 = document.getElementById('box2');
+const box3 = document.getElementById('box3');
 
 
 
@@ -22,7 +24,7 @@ button2.addEventListener('click', function() {
     output('du hast einen button geklick');
 });
 
-button3.addEventListenerconst ('click', function() { 
+button3.addEventListener('click', function() { 
     output('ich habe keine lust');
 });
 
@@ -44,6 +46,25 @@ box1.addEventListener('mouseenter', function() {
 box1.addEventListener('mouseleave', function() { 
     output('du magst box 1 nicht');
 });
+
+
+box2.addEventListener('mouseenter', function() { 
+    output('du magst box 2');
+});
+
+box2.addEventListener('mouseleave', function() { 
+    output('du magst box 2 nicht');
+});
+
+
+box3.addEventListener('mouseenter', function() { 
+    output('du magst box 3');
+});
+
+box3.addEventListener('mouseleave', function() { 
+    output('du magst box 3 nicht');
+});
+
 
 
 
