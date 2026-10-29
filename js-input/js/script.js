@@ -7,7 +7,8 @@ const radioSmall = document.getElementById('radio-klein');
 const radioMedium = document.getElementById('radio-mittel');
 const radioBig = document.getElementById('radio-gross');
 
-
+const size = document.getElementById('size');
+const datum = document.getElementById('datum');
 
 
 btn.addEventListener('click', function() {
@@ -17,7 +18,19 @@ btn.addEventListener('click', function() {
 
     inputbox.value = null;
 
-    console.log(radioMedium.value);
+    if (radioSmall.checked == true){
+        outputbox.style.fontSize = '0.5em';
+    };
+
+    if (radioMedium.checked == true){
+        outputbox.style.fontSize = '1em';
+    };
+
+    if (radioBig.checked == true){
+        outputbox.style.fontSize = '2em';
+    };
+
+    console.log(datum.value);
 });
 
 
@@ -25,3 +38,9 @@ colorpicker.addEventListener('change', function() {
     outputbox.style.color = colorpicker.value;
     outputbox.style.borderColor = colorpicker.value;
 });
+
+
+size.addEventListener('change', function() {
+    console.log(size.value);
+    outputbox.style.fontSize = size.value + 'px';
+}); 
